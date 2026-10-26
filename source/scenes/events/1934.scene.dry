@@ -1,5 +1,5 @@
 title: 1934
-subtitle: A new year
+subtitle: Um novo ano
 new-page: true
 tags: event
 priority: 2
@@ -10,8 +10,8 @@ on-arrival: {!
 
 = 1934
 
-A new year begins. [? if works_program = 0 : The economic depression seems to have bottomed out, but there is still much suffering. It is not too late to launch an economic rescue program. ?][? if works_program >= 1 and unemployed >= 15 : We have begun to launch a public works program, but the economy is still troubled. The recovery has begun, but more must be done. ?][? if works_program >= 1 and unemployed < 15 : Our public works program has successfully guided us through the worst of the crisis. The economy is improving, and finally people have optimism for the future. ?]
+Um novo ano começa. [? if works_program = 0 : A depressão econômica parece ter chegado a um piso, mas ainda há muito sofrimento. Não é tarde demais para lançar um programa de recuperação econômica. ?][? if works_program >= 1 and unemployed >= 15 : Nós começamos a lançar um programa de obras públicas, mas ainda há problemas na economia. A recuperação começou, mas ainda há mais a se fazer. ?][? if works_program >= 1 and unemployed < 15 : Nosso programa de obras públicas teve sucesso em nos guiar durante o pior da crise. A economia está melhorando, e as pessoas estão finalmente se sentindo otimistas com o futuro. ?]
 
-[? if return_to_normalcy: With the return to normalcy, the political landscape in Germany is shifting. Liberalism is making a return among the middle classes, and the radical parties of the right are declining. ?]
+[? if return_to_normalcy: Com o retorno a normalidade, o campo político na Alemanha está mudando. O liberalismo retorna entre as classes médias, e os partidos radicais da direta se enfraquecem. ?]
 
-[? if president = "Hindenburg" : The president is in poor health; he is not expected to live out the year. ?]
+[? if president = "Hindenburg" : A saúde do presidente não está boa; ele não deve sobreviver até o fim do ano. ?]
