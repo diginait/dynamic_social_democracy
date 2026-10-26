@@ -1,5 +1,5 @@
-title: A New Day in Germany
-subtitle: Has democracy finally triumphed?
+title: Um novo dia na Alemanha
+subtitle: A democracia finalmente triunfou?
 tags: event
 priority: 3
 view-if: hindenburg_dead = 1 and president != "Hitler" and president != "Göring" and president != "Seldte"
@@ -8,9 +8,9 @@ on-arrival: {!
 !}
 new-page: true
 
-= A New Day in Germany
+= Um novo dia na Alemanha
 
-After the death of Hindenburg and the presidential election of 1934, it seems as if an era of history is closing. The worst years of political and economic crisis are over, and <span style="color: #7A3C00;">Nazism</span>'s days are numbered. Perhaps Germany will finally enter into a new era of genuine peace...
+Depois da morte de Hindenburg e da eleição presidencial de 1934, é como se uma era da história estivesse chegando ao fim. Os piores anos da cirse política e econômica já passaram, e os dias do <span style="color: #7A3C00;">Nazismo</span> estão contados. Talvez a Alemanha vá finalmente entrar em uma era de genuína paz...
 
-- @game_over_1934: Trigger game over.
+- @game_over_1934: Encerre a partida.
 - @root: Nah.
