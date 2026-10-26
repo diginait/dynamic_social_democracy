@@ -1,5 +1,5 @@
 title: 1931
-subtitle: A new year 
+subtitle: Um novo ano 
 on-arrival: {!
 // increase NSDAP vote share 
 // historical: -7.7%
@@ -18,4 +18,4 @@ view-if: year = 1931 and month = 1
 priority: 2
 max-visits: 1
 
-A new year begins. [? if works_program = 0 : Unemployment continues to spiral upwards. The strength of the <span style="color: #7A3C00;">**NSDAP**</span> continues to rise. ?][? if works_program > 0 : A works program has been enacted in order to reduce unemployment. ?] [? if works_program > 0 and unemployed > 15 : However, unemployment remains too high for comfort. ?]
+Um novo ano começa. [? if works_program = 0 : O desemprego continua a subir disparadamente. A força do <span style="color: #7A3C00;">**NSDAP**</span> continua a aumentar. ?][? if works_program > 0 : Um programa de obras públicas foi aprovado para diminuir o desemprego. ?] [? if works_program > 0 and unemployed > 15 : Apesar disso, as taxas de desempego continuam muito altas para que estejemos confortáveis. ?]
