@@ -1,5 +1,5 @@
 title: 1933
-subtitle: A new year 
+subtitle: Um novo ano 
 on-arrival: {!
 if (Q.works_program && Q.works_program >= 2) {
     Q.unemployed -= 1;
@@ -11,5 +11,5 @@ view-if: year = 1933 and month = 1 and not rubicon
 priority: 2
 max-visits: 1
 
-A new year begins. [? if works_program = 0 : There is finally some good news in Germany. The economic depression has begun the early stages of global recovery. ?][? if works_program >= 1 and unemployed >= 20 : We have begun to launch a public works program, but unemployment is still stubbornly high. The people are beginning to finally have optimism, however, with the global recovery beginning. ?][? if works_program >= 1 and unemployed < 20 : We have begun to launch a public works program, and unemployment is finally starting to fall. The people are beginning to finally have optimism. The depression has begun the early stages of recovery across the world as well. ?]
+Um novo ano começa. [? if works_program = 0 : Finalmente há boas notícias na Alemanha. A depressão começou a dar os primeiros sinais de recuperação global. ?][? if works_program >= 1 and unemployed >= 20 : Nós começamos a lançar um programa de obras públicas, mas o desemprego ainda está teimosamente alto. Apesar disso, as pessoas estão finalmente começando a se sentirem otimistas, visto o início da recuperação global. ?][? if works_program >= 1 and unemployed < 20 : Nós começamos a lançar um programa de obras públicas, e o desemprego está finalmente começando a cair.  As pessoas estão finalmente começando a se sentirem otimistas. A depressão começou a dar os primeiros sinais de recuperação ao redor do mundo também. ?]
 
