@@ -1,24 +1,24 @@
-title: <span style="color: #7A3C00;">Nazi</span> March in Altona
+title: Passeata <span style="color: #7A3C00;">nazista</span> em Altona
 new-page: true
-subtitle: An <span style="color: #7A3C00;">**SA**</span> demonstration, with the potential for violence
+subtitle: Uma manifestação da <span style="color: #7A3C00;">**SA**</span>, com potencial para violência
 tags: event
 view-if: year == 1932 and month == 7 and sa_banned == 0 and spd_prussia == 1 and chancellor != "Papen" and not altona_seen
 max-visits: 1
 
-= <span style="color: #7A3C00;">Nazi</span> March in Altona
+= Passeata <span style="color: #7A3C00;">nazista</span> em Altona
 
-The <span style="color: #7A3C00;">Nazi</span> <span style="color: #7A3C00;">**SA**</span> is planning a march through Altona, a working-class neighborhood of Hamburg known for its high working-class population. Altona is a <span style="color: #700000;">Communist</span> stronghold, and the planned march will almost certainly lead to violent conflict.
+A <span style="color: #7A3C00;">**SA**</span> <span style="color: #7A3C00;">nazista</span> está planejando uma passeata por Altona, um bairro de trabalhadores de Hamburgo conhecido por sua grande população proletária. Altona é uma fortaleza <span style="color: #700000;">comunista</span>, e a passeata planejada vai quase que com certeza levar a um conflito violento.
 
-- @ban_march: Ban the march before it starts.
-- @allow_police: Allow the march, with a heavy police presence.
-- @allow_no_police: Allow the march without a police presence.
+- @ban_march: Bana a passeata antes que começe.
+- @allow_police: Permita a passeata, mas com grande presença da polícia.
+- @allow_no_police: Permita a marcha sem presença dapolícia.
 
 @ban_march
 choose-if: judicial_reform >= 2
-unavailable-subtitle: The judiciary would not allow us to ban the protest, because of free speech.
+unavailable-subtitle: O judiciário não nos deixaria proibir o protesto, por causa da liberdade de expressão.
 on-arrival: sa_strength -= 10; altona_good = 1
 
-We have banned the planned protest. The <span style="color: #7A3C00;">Nazis</span> appeal the ban in the courts in the name of freedom of speech. Thankfully, the judiciary agrees with us that the <span style="color: #7A3C00;">Nazis</span>' argument is specious.
+Nós banimos o protesto planejado. Os <span style="color: #7A3C00;">nazistas</span> pedem recurso sobre o banimento nos tribunais em nome da liberdade de expressão. Felizmente, o judiciário concorda conosco que a justificativa dos <span style="color: #7A3C00;">Nazis</span>' é suspeita.
 
 
 @allow_police
@@ -27,17 +27,17 @@ go-to: allow_police_violence if prussian_police_loyalty <= 0.75; allow_police_no
 @allow_police_violence
 on-arrival: strife += 1; sa_strength += 50; kpd_relation -= 8; communist_coalition -= 1
 
-When the march arrives in Altona, they are immediately confronted by an angry crowd of <span style="color: #700000;">communists</span> and <span style="color: #c00000;">socialists</span>, who throw objects at the <span style="color: #7A3C00;">Nazis</span>. The police attempt to separate the two groups, to no avail. Gunshots are heard, reportedly from rooftop snipers (whom the police believe are <span style="color: #700000;">communists</span>). In response, the police fire into the surrounding buildings. Dozens are killed. All turn out to be civilians, and the reported snipers are never found.
+Quando a passeata chega em Altona, eles são imediatamente conforntados por uma multidão enfervecidade de <span style="color: #700000;">comunistas</span> e <span style="color: #c00000;">socialistas</span>, que jogam objetos aos <span style="color: #7A3C00;">nazistas</span>. A polícia tenta separar os dois grupos, sem sucesso. Tiros são escutados, alegadamente de snipers no telhado de prédios (que a polícia acredita serem <span style="color: #700000;">communistas</span>). Em resposta, a polícia atira nas construções em volta. Dezenas são mortos. Todos são revelados como civis, e os tais snipers nunca são encontrados.
 
-This incident has been called "Altona Bloody Sunday" in the media. The <span style="color: #700000;">Communists</span> assail the incompetence of the police, who are supposedly under our command.
+Esse incidente foi chamado de "Domingo sangrento de Altona" pela mídia. Os <span style="color: #700000;">Comunistas</span> criticam a incopentência da polícia, que estaria sob nosso comando.
 
 @allow_police_no_violence
 on-arrival: altona_good = 1; sa_strength += 10
 
-When the march arrives in Altona, they are immediately confronted by an angry crowd of <span style="color: #700000;">communists</span> and <span style="color: #c00000;">socialists</span>, who throw objects at the <span style="color: #7A3C00;">Nazis</span>. The police attempt to separate the two groups, to no avail. Gunshots are heard, reportedly from rooftop snipers. The police manage to keep their cool, the shots stop, and the march disperses without further violence.
+Quando a passeata chega em Altona, eles são imediatamente conforntados por uma multidão enfervecidade de <span style="color: #700000;">comunistas</span> e <span style="color: #c00000;">socialistas</span>, que jogam objetos aos <span style="color: #7A3C00;">nazistas</span>. A polícia tenta separar os dois grupos, sem sucesso. Tiros são escutados, alegadamente de snipers no telhado de prédios. A polícia consegue se manter calma, os tiros param, e a passeata se dispersa sem maiores violências.
 
 
 @allow_no_police
 on-arrival: sa_strength += 80; rfb_strength += 50; strife += 1; kpd_relation -= 8; communist_coalition -= 1
 
-When the march arrives in Altona, they are immediately confronted by an angry crowd of <span style="color: #700000;">communists</span> and <span style="color: #c00000;">socialists</span>, who throw objects at the <span style="color: #7A3C00;">Nazis</span>. Gunshots are heard, reportedly from rooftop snipers. In response, the <span style="color: #7A3C00;">**SA**</span> engage the surrounding crowd and fire at the surrounding buildings. Dozens are killed, mostly civilians. The <span style="color: #7A3C00;">Nazis</span> recruit off their dead martyrs.
+Quando a passeata chega em Altona, eles são imediatamente conforntados por uma multidão enfervecidade de <span style="color: #700000;">comunistas</span> e <span style="color: #c00000;">socialistas</span>, que jogam objetos aos <span style="color: #7A3C00;">nazistas</span>.Tiros são escutados, alegadamente de snipers no telhado de prédios. Em resposta, a <span style="color: #7A3C00;">**SA**</span> ataca a multidão em volta e atira nas construções em volta. Dezenas são mortos, a maioria civis. Os <span style="color: #7A3C00;">nazistas</span> fazem recrutamentos a partir de seus martíres falecidos.
