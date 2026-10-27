@@ -1,5 +1,5 @@
-title: "Agrarian Bolshevism"
-subtitle: A controversial policy involving settling unemployed workers on bankrupt estates in the east.
+title: "Bolchevismo Agrário"
+subtitle: Uma política controversa envolvendo o assentamento de trabalhadores desempregados em latifúndios falidos no leste.
 view-if: bruning_toleration_time >= 6 and second_bruning_cabinet_seen and ((year == 1932 and month >= 5) or year >= 1933) and president == "Hindenburg" and hindenburg_angry_bruning >= 150
 max-visits: 1
 tags: event
@@ -19,19 +19,19 @@ on-display: {!
 !}
 on-arrival: unemployed -= 0.5; economic_growth += 0.4; hindenburg_angry_bruning += 50
 
-= "Agrarian Bolshevism"
+= "Bolchevismo Agrário"
 
-One of the [? if z_party_name != "CVP":<span style="color: #000000;">Center</span>?][? if z_party_name == "CVP":<span style="color: #000000;">CVP</span>?]'s Labor Minister Adam Stegerwald’s pet projects is the dismantling of hopelessly bankrupt eastern estates to carve them into peasant homesteads. The problem is that there haven’t been many young workers eager to turn themselves into peasants.
+Um dos projetos de estimação do Ministro do Trabalho do [? if z_party_name != "CVP":<span style="color: #000000;">Center</span>?][? if z_party_name == "CVP":<span style="color: #000000;">CVP</span>?], Adam Stegerwald, é o dismantelamento de latifúndios completamente falidos no leste para dividí-los em pequenas propriedades camponesas. O problema é que não está havendo muitos jovens trabalhadores ansiosos para se tornarem camponeses.
 
-Still, with [? if not kvp_formed and dnvp_ideology == "Radical": <span style="color: #7FCEB1;">**CNBLP**</span>?][? if kvp_formed: <span style="color: #0087DC;">**KVP**</span>?][? if dnvp_ideology == "Moderate": <span style="color: #3E88B3;">**DNVP**</span>?] member Hans Schlange-Schöningen newly sworn in as Commissar for Eastern Aid—following Treviranus’s move to the Transport Ministry—he’s struck a deal with Stegerwald: estates deemed “hopelessly bankrupt” will be handed over to the Labor Ministry. Backed by his promise to the unions, Stegerwald has pushed a decree that allows the government to purchase select estates at prices set by the Eastern Aid office.
+Porém, com Hans Schlange-Schöningen, membro do [? if not kvp_formed and dnvp_ideology == "Radical": <span style="color: #7FCEB1;">**CNBLP**</span>?][? if kvp_formed: <span style="color: #0087DC;">**KVP**</span>?][? if dnvp_ideology == "Moderate": <span style="color: #3E88B3;">**DNVP**</span>?], há pouco empossado como Comissário de Apoio ao Leste, seguindo a ida do Treviranus ao Ministério do Transporte, ele alcançou um acordo com Stegerwald: latifúndios vistos como “completamente falidos” vão ser entregues ao Ministério do Trabalho. Apoiado por sua promessa aos sindicatos, Stegerwald preparou um decreto que permite ao governo comprar certos latifúndios por preços estabelecidos pela secretaria de Apoio ao Leste.
 
-Unfortunately for Brüning, a copy of the decree has been leaked to the <span style="color: #006400;">National Rural League</span> (<span style="color: #006400;">RLB</span>). Its lobbyists—deeply embedded in Hindenburg’s circle—have denounced it as "<span style="color: #385A38;">Agrarian</span> <span style="color: #9B0000;">Bolshevism</span>" slamming the measure as a descent into <span style="color: #9B0000;">state socialism</span>. They’ve made sure the President, who along with many friends owns eastern estates, see it as a personal attack.
+Infelizmente para Brüning, uma cópia do decreto foi vazada para a <span style="color: #006400;">Liga Rural Nacional</span> (<span style="color: #006400;">RLB</span>). Seus lobistas extremamente integrados aos círculos de Hindenburg o denunciaram como "<span style="color: #9B0000;">Bolchevismo</span> <span style="color: #385A38;">Agrariário</span>" emplacando a medida como uma queda a um <span style="color: #9B0000;">socialismo de estado</span>. Eles garantiram que o presidente, que junto de muitos amigos tem latifúndios no leste, a veja como um ataque pessoal.
 
 - @joever
 
 @joever
-title: Nice having you, Brüning.
+title: Foi um prazer tê-lo aqui, Brüning.
 
-The Agriculture Ministry, led by the respected Martin Schiele, does its best to defend the decree before Hindenburg—but to no avail.
+O Ministério da Agricultura, liderado pelo respeitado Martin Schiele, faz seu melhor para defender o decreto a Hindenburg; mas não teve jeito.
 
-In truth, policy disputes isn’t what will seal Brüning’s fate. Hindenburg had merely planned to give him a few more months to try his luck at Lausanne. But the scheming—and the sense of urgency—pushed by Schleicher, Meissner, and Oskar is forcing his hand toward an early, rash decision.
+Na verdade, disputas sobre políticas não será o que irá selar o destino de Brüning. Hindenburg apenas planejava dá-lo mais alguns meses para que tentasse a sorte em Lausanne. Mas os esquemas, e o senso de urgência, trazidos por Schleicher, Meissner, e Oskar estão forçando sua mão para uma decisão adiantada, e também dura.
