@@ -1,6 +1,6 @@
-title: Suspension of the Austrian parliament
+title: A suspensão do parlamento austríaco
 new-page: true
-subtitle: Our southern neighbor is sliding into dictatorship.
+subtitle: Nosso vizinho do sul caminha em direção a uma ditadura.
 view-if: year = 1933 and month = 3 and ((spd_in_government and foreign_minister_party = "SPD") or (austria_relation >= 1))
 max-visits: 1
 on-arrival: austrian_parliament_seen = 1
@@ -20,47 +20,47 @@ tags: event
 
 # Must control foreign ministry or have made contact with Austrian socialists.
 
-= Suspension of the Austrian Parliament
+= A suspensão do parlamento austríaco
 
-Due to a controversial proposal regarding a railroad strike in the Austrian National Council, all three presidents of the National Council resigned, leaving it without any presiding officers. This is a constitutional crisis. Austrian chancellor Engelbert Dollfuß has taken advantage of this crisis by suspending the parliament and ruling by emergency decree, forming an "<span style="color: #7A3C00;">Austrofascist</span>" government. Dollfuß consolidates his power by persecuting his political opponents, especially our fellow <span style="color: #A50034;">Social Democrats</span> in the <span style="color: #A50034;">**SDAPÖ**</span> (<span style="color: #A50034;">Social Democratic Worker's Party of Austria</span>).
+Por causa de uma proposta controversa sobre uma greve de maquinistas no Conselho Nacional austríaco, todos os três presidentes do Conselho Nacional renunciaram, deixando-o sem nenhum membro para presidí-lo. Isso é um crise constitucional. O Chanceler austríaco Engelbert Dollfuß se aproveitou da crise para suspender o parlamento e governar por meio de decretos emergenciais, formando um governo "<span style="color: #7A3C00;">Austrofascista</span>". Dollfuß consolidou seu poder por meio da perseguição de oponentes políticos, especialmente de nossos caros <span style="color: #A50034;">Social-Democratas</span> do <span style="color: #A50034;">**SDAPÖ**</span> (<span style="color: #A50034;">Partido Social-Democrata dos Trabalhadores da Áustria</span>).
 
-Is there anything we could do?
+Há algo que possamos fazer?
 
 # - use EU to sanction Austria (will prevent civil war and restore democracy)
 # - apply diplomatic pressure to Austria (without EU)
 # - fund the Schutzbund
 # after this, supporting Austrians will raise sdapo_strength; if sdapo_strength >= 2, they'll enter a long civil war; if sdapo_strength >= 5, they'll win.
 
-- @eu_sanctions: Call upon the <span style="color: #001489;">European</span> <span style="color: #FFDD00;">Union</span> to sanction Austria, unless the National Council is restored.
-- @diplomatic_pressure: Apply diplomatic pressure to Austria to restore the National Council.
-- @fund_schutzbund: Support the <span style="color: #A50034;">**SDAPÖ**</span>'s underground organizing.
-- @nothing: Nothing can be done.
+- @eu_sanctions: Trabalhe para que a <span style="color: #001489;">União</span> <span style="color: #FFDD00;">Européia</span> sancione a Áustria, a não ser que o Conselho Nacional seja restaurado.
+- @diplomatic_pressure: Aplique pressão diplomática à Áustria para que restaurem o Conselho Nacional.
+- @fund_schutzbund: Suporte as organizações clandestinas do <span style="color: #A50034;">**SDAPÖ**</span>.
+- @nothing: Nada pode ser feito.
 
 @eu_sanctions
 view-if: eu = 1
 on-arrival: sdapo_strength += 3; sdapo_strength += 1 if customs_union; eu_austria = 1
 
-The <span style="color: #001489;">European</span> <span style="color: #FFDD00;">Union</span> is a largely untested body, and from the beginning contained members that are at best quasi-democratic. Most of its members are more concerned by power politics than democratic values. However, as its founder, Germany holds a special influence in the <span style="color: #001489;">E</span><span style="color: #FFDD00;">U</span>, and we manage to persuade the other members to join in the pressure against <span style="color: #7A3C00;">Austrofascism</span>.
+A <span style="color: #001489;">União</span> <span style="color: #FFDD00;">Européia</span> é uma isntituiçaõ que não passou por testes, e desde o seu começo continha membros que são no máximo quasi-democráticos. A maioria de seus membros está mais preocupado com a disputa por poder do que valores democráticos. Porém, como sua fundadora, a Alemanha tem uma influência especial na <span style="color: #001489;">U</span><span style="color: #FFDD00;">E</span>, e conseguimos persuadir os outros membros a se juntarem na pressão contra o <span style="color: #7A3C00;">Austrofascismo</span>.
 
-The Dollfuß regime does not give in, but it is weakened and isolated.
+O regime de Dollfuß não cai, mas é enfraquecido e isolado.
 
 @diplomatic_pressure
 view-if: foreign_minister_party = "SPD"
 on-arrival: sdapo_strength += 1; sdapo_strength += 2 if customs_union
 
-We still have much economic influence in Austria, and the threat of sanctions.
+Nós ainda temos muita influência econômica sobre a Áustria, e a ameaça de sanções.
 
-The Dollfuß regime does not give in, but it is somewhat weakened.
+O regime de Dollfuß não cai, mas é de certa forma enfraquecido.
 
 @fund_schutzbund
 on-arrival: resources -= 1; sdapo_strength += 1; sdapo_strength += 1 if customs_union
 subtitle: -1 resource
 choose-if: resources >= 1
 
-It is somewhat of a breach of diplomatic protocol for the <span style="color: #c00000;">**SPD**</span> to so directly interfere in another country's affairs, supporting the <span style="color: #A50034;">Austrian social democrats</span>.
+É meio que uma quebra de protocolo diplomático para o <span style="color: #c00000;">**SPD**</span> interferir tão diretamente nos assuntos de outro país, apoiando os <span style="color: #A50034;">social-democratas austríacos</span>.
 
-The Dollfuß regime does not give in, but its opponents have an added advantage. That may not be enough when dealing with the total force of the <span style="color: #7A3C00;">fascist</span> state.
+O regime de Dollfuß não cai, mas seus oponentes têm uma vantagem maior. Isso pode não ser o suficiente quando lidando com a força total do estado <span style="color: #7A3C00;">fascista</span>.
 
 @nothing
 
-Unfortunately, there is nothing we can do for our Austrian comrades.
+Infelizmente, não há nada que possamos fazer para nossos camaradas austríacos.
