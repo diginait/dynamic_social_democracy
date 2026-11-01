@@ -1,43 +1,43 @@
-title: Uprising in Austria
+title: Insurreição na Áustria
 new-page: true
-subtitle: In response to police attacks, the <span style="color: #A50034;">Austrian socialists</span> are rising up...
+subtitle: Em resposta aos ataques da polícia, os <span style="color: #A50034;">socialistas austríacos</span> estão se rebelando...
 view-if: year = 1934 and (month = 2 or month = 3) and austrian_parliament_seen
 max-visits: 1
 on-arrival: austrian_civil_war_seen = 1
 face-image: img/schutzbund.png
 tags: event
 
-= Uprising in Austria
+= Insurreição na Áustria
 
 # pre-emptive democratic victory if sdapo strength >= 6
 # long civil war if sdapo_strength = 5 or 4 - opportunity for interference/forced peace
 # instant defeat if sdapo_strength < 4
 
-The crisis in Austria is continuing. The "<span style="color: #7A3C00;">Austrofascist</span>" government led by Engelbert Dollfuß continues to rule by emergency decree. It has been persecuting its political opposition, primarily the <span style="color: #A50034;">social democrats</span> of the <span style="color: #A50034;">**SDAPÖ**</span>.
+A crise na Áustria continua. O governo "<span style="color: #7A3C00;">Austrofascista</span>" liderado por Engelbert Dollfuß continua a atuar por meio de decretos emergenciais. Ele tem perseguido a oposição política, principalmente os <span style="color: #A50034;">social-democratas</span> do <span style="color: #A50034;">**SDAPÖ**</span>.
 
-[? if sdapo_strength < 6: Now, Austria is entering a state of civil war. When the police attempted to seize weapons from the Republikanischer Schutzbund, the Schutzbund responded with force, shooting at the government troops. Fighting has sporadically broken out between Schutzbund and government forces all over Austria. ?]
+[? if sdapo_strength < 6: Agora, a Áustria está entrando em um estado de guerra civil. Quando a polícia tentou tirar as armas do Republikanischer Schutzbund, o Schutzbund respondeu com força, atirando nas tropas do governo. Conflitos vioentos começaram a ocorrer esporádicamente entre o Schutzbund e as forças do governo por toda Áustria. ?]
 
-[? if sdapo_strength >= 6: The government's attempts to suppress the <span style="color: #A50034;">socialist</span> party and the Schutzbund were met with mass protest, supported by the <span style="color: #c00000;">**SPD**</span>[? if foreign_minister_party = "SPD":&nbsp;and the German government?]. [? if eu_austria: They are also supported by the recently formed <span style="color: #001489;">European</span> <span style="color: #FFDD00;">Union</span>, with economic sanctions targeting the government. ?] ?]
+[? if sdapo_strength >= 6: As tentativas do governo de suprimir o partido <span style="color: #A50034;">socialista</span> e o Schutzbund foram encaradas com protestos em massa, apoiados pelo <span style="color: #c00000;">**SPD**</span>[? if foreign_minister_party = "SPD":&nbsp;e pelo governo alemão?]. [? if eu_austria: Eles também receberam suporte da recém formada <span style="color: #001489;">União</span> <span style="color: #FFDD00;">Européia</span>, com sansões econômicas contra o governo. ?] ?]
 
-Eventually...
+Eventualmente...
 
 - @crushed
 - @long_war
 - @sdapo_victory
 
 @crushed
-title: The rebellious Schutzbund has been crushed.
+title: O revoltoso Schutzbund foi esmagado.
 on-arrival: austria_defeat = 1
 view-if: sdapo_strength < 4
 
-The uprising lasted for no more than a few days before it was crushed. The Schutzbund and <span style="color: #A50034;">**SDAPÖ**</span> were too weak and too divided to stand against the forces of the state.
+A insurreição durou apenas alguns dias antes de ser esmagada. O Schutzbund e o <span style="color: #A50034;">**SDAPÖ**</span> estavam muito fracos e muito divididos para avançar contra as forças do Estado.
 
 @long_war
-title: It is a civil war.
+title: É uma guerra civil.
 view-if: sdapo_strength = 5 or sdapo_strength = 4
 on-arrival: austria_civil_war = 1
 
-Neither side is backing down, and the <span style="color: #A50034;">**SDAPÖ**</span> have formed an alternative government after defeating the government troops in some cities. Austria is in a state of civil war.
+Nenhum lado está recuando, e o <span style="color: #A50034;">**SDAPÖ**</span> formou um governo alternativo depois de derrotar as forças do Estado em algumas cidades. A Áustria está em estado de guerra civil.
 
 - @support_sdapo_party
 - @support_sdapo_govt
@@ -45,44 +45,44 @@ Neither side is backing down, and the <span style="color: #A50034;">**SDAPÖ**</
 - @long_war_2
 
 @support_sdapo_party
-title: As a party, the <span style="color: #c00000;">**SPD**</span> will provide the <span style="color: #A50034;">**SDAPÖ**</span> with support.
+title: Como partido, o <span style="color: #c00000;">**SPD**</span> vai providenciar ao <span style="color: #A50034;">**SDAPÖ**</span> suporte.
 subtitle: -2 resources
 choose-if: resources >= 2
 on-arrival: resources -= 2; sdapo_strength += 1
 go-to: sdapo_victory if sdapo_strength >= 6; long_war_2 if sdapo_strength < 6
 
-The <span style="color: #c00000;">**SPD**</span> raises its resources to provide arms and volunteers for the <span style="color: #A50034;">**SDAPÖ**</span>.
+O <span style="color: #c00000;">**SPD**</span> usa seus recursos para providenciar armas e voluntários para o <span style="color: #A50034;">**SDAPÖ**</span>.
 
 @support_sdapo_govt
-title: The Foreign Ministry will support the democratic Austrian forces.
+title: O Ministério das Relações Exteriores vai dar suporte às forças democráticas austríacas.
 view-if: spd_in_government and foreign_minister_party = "SPD"
 on-arrival: sdapo_strength += 1
 go-to: sdapo_victory if sdapo_strength >= 6; long_war_2 if sdapo_strength < 6
 
-We provide diplomatic and some financial and material support to the <span style="color: #A50034;">**SDAPÖ**</span> forces.
+Nós providenciamos apoio diplomático, e também algum financeiro e material, para as forças do <span style="color: #A50034;">**SDAPÖ**</span>.
 
 @force_peace
-title: Can we bring the sides together for a peace?
+title: Conseguiríamos juntar os dois lados para uma paz?
 view-if: spd_in_government and foreign_minister_party = "SPD" and sdapo_strength = 5
 on-arrival: austria_peace = 1; pro_republic += 3; coup_progress -= 1; ddp_left += 2; dvp_left += 2; lvp_left += 2
 
-The Austrian government obviously sees us as biased, so there is no way they will let us host peace negotiations. However, negotiations begin nonetheless. In Switzerland, with <span style="color: #7A3C00;">Fascist</span> Italy as the <span style="color: #7A3C00;">Austrofascists</span>' protector and Germany as the <span style="color: #A50034;">**SDAPÖ**</span>'s, a peace deal is hammered out. The <span style="color: #A50034;">socialists</span> are disarmed and give up all pretense of revolution, while the <span style="color: #ABDDA4;">right-wing</span> paramilitaries are also disarmed. Dictatorship ends, and normal government is restored, with free elections.
+O governo austríaco claramente nos vê como parciais, então não tem como eles aceitarem que sediemos uma negociamção de paz. Apesar disso, negociações se iniciam assim mesmo. Na Suíça, com a Itália <span style="color: #7A3C00;">Fascista</span> como protetora dos <span style="color: #7A3C00;">Austrofascistas</span> e a Alemanha a protetora do <span style="color: #A50034;">**SDAPÖ**</span>, uma paz consegue ser forçada. Os <span style="color: #A50034;">socialistas</span> são desarmados e desistem de qualquer pretenção de revolução, enquanto as forças paramilitares da <span style="color: #ABDDA4;">direita</span> também são desarmadas. A ditadura acaba, e o governo normal é restaurado com eleições livres.
 
-Given the <span style="color: #A50034;">**SDAPÖ**</span>'s starting position, this is treated as a victory. Now begins the long work of reconstruction...
+Dada a posição inicial do <span style="color: #A50034;">**SDAPÖ**</span>, será uma vitória em certo. Agora começa o longo trabalho de reconstrução...
 
 @long_war_2
-title: There is nothing we can do.
+title: Não há nada que possamos fazer.
 on-arrival: z_relation -= 6; dvp_relation -= 6; ddp_relation -= 3; catholics_spd -= 5; old_middle_spd -= 5; coalition_dissent += 1; economic_growth -= 0.5; ddp_right += 2; dvp_right += 2; lvp_right += 2
 
-No matter our efforts, the war continues. Too many lives are extinguished. Refugees begin to flow into Germany, and trade suffers. Many are calling our Austrian interference a mistake.
+Não importa nossos esforços, a guerra continua. Muitas vindas são findadas. Refugiados começam a correr para a Alemanha, e o comércio piora. Muitos estão dizendo que nossa interferência na Áustria foi um erro.
 
 
 @sdapo_victory
-title: The <span style="color: #7A3C00;">Austrofascists</span> are backing down!
+title: Os <span style="color: #7A3C00;">Austrofascistas</span> estão se rendendo!
 on-arrival: sdapo_win = 1; pro_republic += 5; west_relation += 1; east_relation += 1; austria_victory = 1; reichswehr_loyalty += 0.1; coup_progress -= 2; ddp_left += 3; dvp_left += 3; lvp_left += 3
 view-if: sdapo_strength >= 6
 achievement: arbeiter_von_wien
 
-The result is that the <span style="color: #7A3C00;">Austrofascists</span> have backed down! Caught in an untenable position domestically and abroad, they have agreed to restore the National Council and resign from government, holding new elections. Now begins the long work of reconstruction. Our countries are likely to be brought closer together as a result.
+O resultado é que os <span style="color: #7A3C00;">Austrofascistas</span> se renederam! Jogados em uma posição politicamente insustentável internamente e no exterior, eles concordaram em restaurar o Conselho Nacional e renunciar seu governo, anunciando novas eleições. Agora começa o longo trabalho de reconstrução. Nossos países provavelmente irão se aproximar como resultado.
 
-[? if eu_austria: This is a great success of the new <span style="color: #001489;">European</span> <span style="color: #FFDD00;">Union</span>, and its prestige is seen to rise internationally. ?]
+[? if eu_austria: Este é um grande seucesso da nova <span style="color: #001489;">União</span> <span style="color: #FFDD00;">Européia</span>, e é possível ver seu prestígio aumentar internacionalmente. ?]
