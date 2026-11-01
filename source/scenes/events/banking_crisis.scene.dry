@@ -1,5 +1,5 @@
-title: Banking Crisis
-subtitle: The collapse of the German banking system...
+title: Crise bancária
+subtitle: O colapso do sistema bancário alemão...
 new-page: true
 on-arrival: banking_crisis_seen = 1; workers_kpd += 2; unemployed_kpd += 5; workers_nsdap += 3 if chancellor != "Hitler"; new_middle_nsdap += 5 if chancellor != "Hitler"; old_middle_nsdap += 5 if chancellor != "Hitler"; rural_nsdap += 3 if chancellor != "Hitler"; unemployed += 3; crisis_urgency += 1; workers_spd -= 4 if spd_in_government; new_middle_spd -= 5 if spd_in_government; old_middle_spd -= 5 if spd_in_government; rural_spd -= 4 if spd_in_government; economic_growth -= 1.4; hindenburg_angry_bruning += 20; hindenburg_angry += 40; dnvp_angry += 1 if spd_toleration_right; banking_crisis_fallout_time = time + 6
 tags: event
@@ -8,7 +8,7 @@ max-visits: 1
 priority: 1
 face-image: img/danat_bank.jpg
 
-= Banking Crisis
+= Crise bancária
 
 The Darmstädter und Nationalbank, or Danat Bank, has collapsed! Along with it goes much of the German banking system. The cause seemed to be due to the government's pursuit of a customs union with Austria, which led to de facto international sanctions. This has set off a global ripple effect, deepening the depression and driving foreign banks into bankruptcy.
 
